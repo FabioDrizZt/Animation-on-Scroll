@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Animaciones con AOS</title>
+    <!-- Agregar el CSS de AOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+        /* Estilos adicionales si los necesitas */
+        .contenedor {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .elemento {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>Animaciones </h1>
+
+<div class="contenedor">
+    <!-- Ejemplo de animaciones -->
+    <div class="elemento" data-aos="fade-up">Desvanecer hacia arriba</div>
+    <div class="elemento" data-aos="fade-down">Desvanecer hacia abajo</div>
+    <div class="elemento" data-aos="fade-left">Desvanecer hacia la izquierda</div>
+    <div class="elemento" data-aos="fade-right">Desvanecer hacia la derecha</div>
+    <div class="elemento" data-aos="zoom-in">Zoom hacia adentro</div>
+    <div class="elemento" data-aos="fade">Desvanecer</div>
+</div>
+
+<footer><p>pie de pagina</p></footer>
+<!-- Agregar el JavaScript de AOS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
